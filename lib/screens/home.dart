@@ -26,9 +26,9 @@ class _HomeState extends State<Home> {
     //       context, MaterialPageRoute(builder: (context) => Login()));
     // }
 
-    int tgl = DateTime.now().day;
-    int bln = DateTime.now().month;
-    int thn = DateTime.now().year;
+    var tgl = DateTime.now().day.toString().padLeft(2, "0");
+    var bln = DateTime.now().month.toString().padLeft(2, "0");
+    var thn = DateTime.now().year;
 
     print(DateTime.parse("${thn}-${bln}-${tgl}"));
 
